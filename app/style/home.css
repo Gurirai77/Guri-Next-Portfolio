@@ -1,0 +1,1613 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+/* ================= GLOBAL HEADLINE STYLE ================= */
+
+/* ================= CLEAN HEADLINE ================= */
+
+.headline {
+    font-size: 38px;
+    font-weight: 700;
+    color: white;
+    letter-spacing: 1px;
+    position: relative;
+    display: inline-block;
+    transition: 0.3s ease;
+}
+
+.headline::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -10px;
+    transform: translateX(-50%);
+    width: 0%;
+    height: 3px;
+    background: linear-gradient(90deg, #155DFD, #4a9bec);
+    border-radius: 5px;
+    transition: width 0.4s ease;
+}
+
+.headline:hover {
+    color: #ffffff;
+}
+
+.headline:hover::after {
+    width: 70%;
+}
+
+.navbaarp {
+    width: 100%;
+    padding: 10px;
+    background-color: #1E2A3A;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.navbaarc1 {
+    display: flex;
+    gap: 45px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding-right: 140px;
+}
+
+.p {
+    color: white;
+    cursor: pointer;
+}
+
+.p:hover {
+    color: #155DFD;
+    text-decoration: underline;
+}
+
+.navbaarc1 a{
+    text-decoration: none;
+    color: white;
+}
+
+.navbaarc1 a:hover {
+    color: #044ff3;
+}
+
+a{
+    text-decoration: none;
+}
+
+.herosection {
+    display: flex;
+    width: 100%;
+    height: 90vh;
+    background-color: #182132;
+}
+
+.aboutme {
+    width: 100%;
+    padding: 110px 80px;
+    background: linear-gradient(135deg, #0f1724, #182132);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.about-content {
+    max-width: 850px;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+/* Highlight bold text */
+.about-content b {
+    color: #4a9bec;
+    font-weight: 600;
+}
+
+/* Final Line */
+.Lets {
+    font-weight: 600;
+    font-size: 18px;
+    color: white;
+}
+
+/* CV Button */
+.cv-btn-wrapper {
+    margin-top: 40px;
+}
+
+.articleS2 {
+    width: 100%;
+    height: 110vh;
+    background-color: #0d1b2aee;
+}
+
+.gurilogo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-left: 100px;
+}
+
+.gurilogo img {
+    width: 40px;
+    border: 1px solid skyblue;
+    border-radius: 100%;
+    cursor: pointer;
+}
+
+.gurilogo span {
+    color: #4a9bec;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+.hc1 {
+    width: 50%;
+    height: 100%;
+    /* background-color: rgb(10, 41, 41); */
+}
+
+.hc2 {
+    width: 50%;
+    height: 100%;
+    align-items: center;
+    justify-items: center;
+    /* background-color: rgb(255, 0, 149); */
+}
+
+.htextdiv {
+    width: 500px;
+    /* background-color:blueviolet ; */
+    margin-top: 120px;
+    margin-left: 100px;
+}
+
+.iamguri,
+.rai {
+    color: white;
+    font-size: 70px;
+    font-weight: 800;
+    font-family: sans-serif;
+}
+
+.iamguri:hover,
+.rai:hover {
+    /* text-decoration:underline #1E2A3A; */
+    box-shadow: 0px 0px 15px 5px #2c446c;
+}
+
+.htextdiv p {
+    color: white;
+    font-size: 25px;
+    margin-top: 10px;
+}
+
+.sdtext {
+    font-size: 20px;
+    font-size: 25px;
+    color: #4a9bec;
+}
+
+.hc1but {
+    width: 250px;
+    display: flex;
+    gap: 13px;
+    /* background-color: aqua; */
+    align-items: center;
+    margin-left: 100px;
+    margin-top: 30px;
+}
+
+.hc1b1 {
+    width: 120px;
+    height: 50px;
+    background-color: #155DFD;
+    color: white;
+    border: 1px solid #155DFD;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.hc1b1:hover {
+    background-color: #0146da;
+}
+
+.hc1b2 {
+    width: 120px;
+    height: 50px;
+    background-color: #0d1b2ae7;
+    color: #4a9bec;
+    border: 1px solid #155DFD;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.hc1b2:hover {
+    background-color: #0d1b2a04;
+}
+
+.gurihc2 {
+    width: 320px;
+    margin-top: 130px;
+    box-shadow: 0px 0px 10px 10px #0d1b2ae7;
+    border-radius: 100%;
+}
+
+.gurihc2:hover {
+    box-shadow: 0px 0px 10px 10px #1b3551e7;
+}
+
+.about-content p {
+    color: #d6deea;
+    font-size: 17px;
+    line-height: 1.9;
+    transition: 0.3s ease;
+}
+
+.about-content p:hover {
+    color: white;
+}
+
+.aboutme p {
+    color: white;
+    font-size: 1.1rem;
+    line-height: 1.9;
+    /* margin-bottom: 20px; */
+    max-width: 850px;
+    padding-top: 15px;
+    margin: 10px auto;
+}
+
+.aboutme b {
+    color: #f1f5f9;
+}
+
+
+.skills {
+  width: 100%;
+  padding: 110px 80px;
+  background: #0f1724;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 70px;
+}
+
+/* Skill tags */
+.skill-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.skill-tags span {
+  font-size: 13px;
+  padding: 6px 12px;
+  border-radius: 6px;
+  background: rgba(74,155,236,0.1);
+  color: #4a9bec;
+  border: 1px solid rgba(74,155,236,0.3);
+  transition: 0.2s ease;
+}
+
+.skill-tags span:hover {
+  background: #4a9bec;
+  color: white;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .skills {
+    padding: 60px 20px;
+  }
+
+  .ftl {
+    width: 100%;
+    max-width: 400px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .skills {
+        padding: 60px 20px;
+    }
+
+    .ftl {
+        width: 100%;
+        max-width: 400px;
+    }
+}
+
+.skillsc1 h1 {
+    color: white;
+}
+
+/* Heading spacing */
+.skillsc1 {
+  display: flex;
+  justify-content: center;
+}
+
+
+/* Layout */
+.skillsc2 {
+  width: 100%;
+  max-width: 1100px;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.skillsc2 h4{
+    font-size: 25px;
+}
+
+/* Skill Card */
+/* Card */
+.ftl {
+  width: 320px;
+  padding: 35px;
+  border-radius: 16px;
+  background: #182132;
+  border: 1px solid rgba(255,255,255,0.05);
+  transition: all 0.3s ease;
+}
+
+.ftl:hover {
+  transform: translateY(-8px);
+  border: 1px solid #4a9bec;
+}
+
+/* Title */
+.ftl h4 {
+  font-size: 18px;
+  margin-bottom: 20px;
+  color: white;
+  font-weight: 600;
+}
+/* ================= EDUCATION SECTION ================= */
+
+/* ================= EDUCATION SECTION PRO ================= */
+
+.Education {
+    width: 100%;
+    padding: 110px 80px;
+    background: linear-gradient(135deg, #0d1b2a, #182132);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 70px;
+}
+
+/* Heading Style */
+.ec1 h1 {
+    color: white;
+    font-size: 36px;
+    font-weight: 700;
+    position: relative;
+}
+
+.ec1 h1::after {
+    content: "";
+    width: 60px;
+    height: 3px;
+    background: linear-gradient(90deg, #155DFD, #4a9bec);
+    position: absolute;
+    left: 50%;
+    bottom: -10px;
+    transform: translateX(-50%);
+}
+
+/* Timeline Container */
+.ec2 {
+    width: 100%;
+    max-width: 900px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    position: relative;
+}
+
+/* Vertical Gradient Line */
+.ec2::before {
+    content: "";
+    position: absolute;
+    left: 25px;
+    top: 0;
+    width: 4px;
+    height: 100%;
+    background: linear-gradient(to bottom, #155DFD, #4a9bec);
+    border-radius: 5px;
+}
+
+/* Education Card */
+.sd {
+    position: relative;
+    background: rgba(30, 42, 58, 0.85);
+    backdrop-filter: blur(8px);
+    padding: 35px 35px 35px 70px;
+    border-radius: 18px;
+    border: 1px solid rgba(255,255,255,0.05);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.35);
+    transition: all 0.35s ease;
+}
+
+/* Timeline Dot */
+.sd::before {
+    content: "";
+    position: absolute;
+    left: 15px;
+    top: 40px;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background: #4a9bec;
+    box-shadow: 0 0 15px #4a9bec;
+    border: 3px solid #0d1b2a;
+}
+
+/* Hover Effect */
+.sd:hover {
+    transform: translateX(10px);
+    box-shadow: 0 30px 60px rgba(0,0,0,0.5);
+}
+
+/* Text Styling */
+.sd h2 {
+    color: #4a9bec;
+    font-size: 21px;
+    margin-bottom: 10px;
+}
+
+.sd p {
+    color: #d6deea;
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+@media (max-width: 768px) {
+
+    .Education {
+        padding: 60px 20px;
+    }
+
+    .ec2::before {
+        left: 15px;
+    }
+
+    .sd h2{
+        text-align: center;
+    }
+
+     .sd p{
+        text-align: center;
+    }
+
+
+
+    .sd {
+        padding: 30px 25px 30px 55px;
+    }
+
+    .sd::before {
+        left: 5px;
+    }
+}
+/* ================= WORK SECTION ================= */
+
+.work {
+    width: 100%;
+    padding: 100px 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 70px;
+    background: linear-gradient(135deg, #182132, #1e2b3d);
+}
+
+.workc1 h1 {
+    color: white;
+    font-size: 36px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.workc2 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    flex-wrap: wrap;
+}
+
+/* ===== CARD ===== */
+
+.wcard1 {
+    width: 380px;
+    background-color: #1E2A3A;
+    border-radius: 14px;
+    overflow: hidden;
+    transition: all 0.35s ease;
+    border: 1px solid rgba(255,255,255,0.08);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+}
+
+.wcard1:hover {
+    transform: translateY(-10px);
+    border: 1px solid #4a9bec;
+    box-shadow: 0 20px 40px #0d1523;
+}
+
+/* ===== IMAGE ===== */
+
+.cardimg {
+    width: 100%;
+    height: 220px;
+    overflow: hidden;
+}
+
+.cardimg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.wcard1:hover .cardimg img {
+    transform: scale(1.08);
+}
+
+/* ===== TEXT ===== */
+
+.cardtext {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.cardtext h4 {
+    color: #4a9bec;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.cardtext p {
+    color: #d1d9e6;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+/* ===== TECH TAGS ===== */
+
+.cardlang {
+    display: flex;
+    gap: 10px;
+    margin-top: 8px;
+    flex-wrap: wrap;
+}
+
+.cardlang p {
+    background: rgba(74,155,236,0.15);
+    color: #4a9bec;
+    padding: 6px 12px;
+    font-size: 13px;
+    border-radius: 20px;
+    border: 1px solid rgba(74,155,236,0.3);
+}
+
+/* ===== MOBILE ===== */
+
+@media (max-width: 768px) {
+
+    .work {
+        padding: 60px 20px;
+    }
+
+    .workc2 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .wcard1 {
+        width: 100%;
+        max-width: 420px;
+    }
+
+}
+
+.Lets {
+    text-align: start;
+}
+
+/* ================= CONTACT SECTION ================= */
+
+.contact {
+    width: 100%;
+    padding: 100px 80px;
+    background: linear-gradient(135deg, #1e2b3d, #182132);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 70px;
+}
+
+.cc1 h2 {
+    color: white;
+    font-size: 32px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+/* ===== MAIN LAYOUT ===== */
+
+.cc2 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    flex-wrap: wrap;
+}
+
+/* ===== LEFT CONTACT BOX PROFESSIONAL ===== */
+
+.cbox1 {
+    width: 420px;
+    padding: 45px;
+    background: linear-gradient(145deg, #1E2A3A, #223247);
+    border-radius: 18px;
+    border: 1px solid rgba(255,255,255,0.06);
+    box-shadow: 0 20px 45px rgba(0,0,0,0.35);
+    transition: all 0.3s ease;
+}
+
+.cbox1:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 30px 60px rgba(0,0,0,0.45);
+}
+
+.cbox1 h2 {
+    color: #2f6df6;
+    font-size: 26px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.cbox1 p {
+    color: #d6deea;
+    line-height: 1.8;
+    font-size: 15px;
+    margin-bottom: 18px;
+}
+
+/* Contact Info Section */
+
+.contact-info {
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.contact-info a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.3s ease;
+}
+
+.contact-info a:hover {
+    color: #4a9bec;
+    padding-left: 6px;
+}
+
+/* ===== RIGHT BOX (FORM) ===== */
+
+.cbox2 {
+    width: 420px;
+    padding: 40px;
+    background-color: #1E2A3A;
+    border-radius: 16px;
+    border: 1px solid rgba(255,255,255,0.08);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.3);
+    transition: all 0.3s ease;
+}
+
+.cbox2 h2{
+    font-size: 25px;
+    text-align: center;
+    font-weight: 600;
+}
+
+.cbox2:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 25px 50px rgba(0,0,0,0.45);
+}
+
+.cbox2 h2 {
+    color: #4a9bec;
+    margin-bottom: 20px;
+}
+
+/* ===== INPUTS ===== */
+
+.cbox2 input,
+.cbox2 textarea {
+    width: 100%;
+    padding: 14px 16px;
+    margin-bottom: 15px;
+    background-color: #2a3b4f;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    color: white;
+    font-size: 14px;
+    transition: 0.3s ease;
+    outline: none;
+}
+
+.cbox2 input:focus,
+.cbox2 textarea:focus {
+    border: 1px solid #4a9bec;
+    background-color: #2f4258;
+}
+
+/* ===== BUTTON ===== */
+
+.sbutton {
+    width: 100%;
+    padding: 14px;
+    border-radius: 8px;
+    border: none;
+    background: linear-gradient(135deg, #155DFD, #4a9bec);
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.sbutton:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(74,155,236,0.4);
+}
+
+/* ===== SOCIAL ICONS SECTION ===== */
+
+.social-links {
+    margin-top: 30px;
+    display: flex;
+    gap: 20px;
+}
+
+.social-links a {
+    width: 48px;
+    height: 48px;
+    background-color: #2a3b4f;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 20px;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(255,255,255,0.1);
+}
+
+/* ===== INSTAGRAM ===== */
+.social-links a:nth-child(1):hover {
+    transform: translateY(-5px);
+    color: #E1306C;
+    box-shadow: 0 0 15px #E1306C,
+                0 0 30px rgba(225,48,108,0.6);
+    border: 1px solid #E1306C;
+}
+
+/* ===== X (Twitter) ===== */
+.social-links a:nth-child(2):hover {
+    transform: translateY(-5px);
+    color: #ffffff;
+    box-shadow: 0 0 15px #ffffff,
+                0 0 30px rgba(255,255,255,0.6);
+    border: 1px solid #ffffff;
+}
+
+/* ===== YOUTUBE ===== */
+.social-links a:nth-child(3):hover {
+    transform: translateY(-5px);
+    color: #FF0000;
+    box-shadow: 0 0 15px #FF0000,
+                0 0 30px rgba(255,0,0,0.6);
+    border: 1px solid #FF0000;
+}
+/* ===== MOBILE ===== */
+
+@media (max-width: 768px) {
+
+    .contact {
+        padding: 60px 20px;
+    }
+
+    .cc2 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cbox1,
+    .cbox2 {
+        width: 100%;
+        max-width: 420px;
+    }
+
+}
+
+.iyx {
+    display: flex;
+    gap: 15px;
+    color: white;
+    padding-left: 5px;
+}
+
+.iyx I:hover {
+    color: #4a9bec;
+}
+
+.iyx I {
+    font-size: 30px;
+}
+
+.copyr {
+    width: 100%;
+    padding: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #2d425e;
+}
+
+.copyr p {
+    color: white;
+    font-size: 17px;
+}
+
+.cbox2 h2 {
+    color: #155DFD;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.inputdiv1 {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 10px;
+}
+
+form{
+     display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 10px;
+}
+
+.inputdiv1 input {
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+    border: none;
+    background-color: #364153;
+    outline: none;
+}
+
+.inputdiv1 input:hover {
+    border: 0.5px solid #155DFD;
+}
+
+.inputdiv1 textarea {
+    color: white;
+    border-radius: 5px;
+    padding: 19px;
+    background-color: #364153;
+    outline: none;
+    border: none;
+}
+
+.inputdiv1 textarea:hover {
+    border: 0.5px solid #155DFD;
+}
+
+.sbutton {
+    border: none;
+    border-radius: 6px;
+    width: 60%;
+    padding: 15px;
+    margin-left: 70px;
+    background-color: #0146da;
+    cursor: pointer;
+    color: white;
+    border: 1px solid #4a9bec;
+}
+
+.sbutton:hover {
+    background-color: #044ff3;
+    border: 1px solid white;
+    box-shadow: 0px 0px 5px 1px rgba(255, 255, 255, 0.16);
+}
+
+@media only screen and (max-width:600px) {
+    .navbaarc1 {
+        display: none;
+    }
+
+    .navbaar {
+        padding: 15px;
+    }
+
+    .vv2 {
+        display: none;
+    }
+
+    .gurilogo {
+        width: 100%;
+        justify-content: center;
+        padding-right: 15%;
+    }
+
+    .herosection {
+        flex-direction: column;
+        margin-top: 55px;
+        /* padding-left: 40px; */
+        padding: 10px;
+    }
+
+    .hc1 {
+        width: 100%;
+        /* background-color: rebeccapurple; */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .hc2 {
+        width: 100%;
+        /* background-color: red; */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .iamguri,
+    .rai {
+        font-size: 57px;
+        padding-left: 5%;
+    }
+
+    .htextdiv p {
+        padding-left: 5%;
+        font-size: 23px;
+    }
+
+    .gurihc2 {
+        margin: 0;
+        padding: 0;
+        width: 280px;
+    }
+
+    .htextdiv {
+        margin-top: 10px;
+        padding-left: 20px;
+    }
+
+    .hc1but {
+        /* padding-right: 100%; */
+        width: 100%;
+        /* background-color: red; */
+    }
+
+    .aboutme {
+        min-height: 120vh;
+        padding: 30px;
+        /* height: 115vh; */
+    }
+
+    .skillsc2 {
+        flex-direction: column;
+        gap: 45px;
+
+    }
+
+    .ftl {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .sd {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .ec2 {
+        gap: 25px;
+    }
+
+    .workc2 {
+        flex-direction: column;
+        gap: 80px;
+    }
+
+    .wcard1 {
+        width: 100%;
+        height: 35%;
+
+    }
+
+    .contact {
+        padding: 0;
+        padding: 40px 0px;
+    }
+
+    .cc1 {
+        font-size: 20px;
+    }
+
+    .cc2 {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .cbox1 {
+        width: 85%;
+    }
+
+    .cbox2 {
+        width: 85%;
+        height: 500px;
+    }
+
+    .skills {
+        padding: 0;
+        padding: 40px 0px;
+    }
+
+    .Education {
+        padding: 0;
+        padding: 40px 20px;
+    }
+
+    .work {
+        padding: 0;
+        padding: 40px 20px;
+    }
+
+    .View {
+        display: none;
+    }
+
+    .sbutton {
+        margin-left: 50px;
+    }
+}
+
+
+
+@media only screen and (max-width:360px) {
+    .aboutme {
+        min-height: 140vh;
+        padding: 30px;
+        /* height: 115vh; */
+    }
+
+    .cc1 {
+        color: white;
+        font-size: 17px;
+        cursor: pointer;
+        text-align: center;
+    }
+
+    .sbutton {
+        margin-left: 50px;
+    }
+
+    .copyr p {
+        font-size: 15px;
+    }
+
+    .vv2 {
+        display: none;
+    }
+}
+
+@media (max-width: 600px) {
+
+  /* ===== NAVBAR ===== */
+  .navbaarp {
+    padding: 12px 10px;
+  }
+
+  .gurilogo {
+    padding-left: 0;
+    justify-content: center;
+  }
+
+  /* ===== HERO SECTION ===== */
+  .herosection {
+    flex-direction: column;
+    height: auto;
+    padding: 30px 15px;
+    margin-top: 70px;
+  }
+
+  .hc1, .hc2 {
+    width: 100%;
+    height: auto;
+    text-align: center;
+  }
+
+  .htextdiv {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .iamguri,
+  .rai {
+    font-size: 42px;
+  }
+
+  .htextdiv p {
+    font-size: 20px;
+  }
+
+  .hc1but {
+    margin: 20px 0 0;
+    justify-content: center;
+  }
+
+  .gurihc2 {
+    width: 240px;
+    margin: 25px 0;
+  }
+
+  /* ===== ABOUT ===== */
+  .aboutme {
+    height: auto;
+    padding: 40px 20px;
+  }
+
+  /* ===== SKILLS ===== */
+  .skills {
+    padding: 40px 15px;
+  }
+
+  .skillsc2 {
+    flex-direction: column;
+  }
+
+  .ftl {
+    width: 100%;
+  }
+
+  /* ===== EDUCATION ===== */
+  .Education {
+    padding: 40px 15px;
+  }
+
+  .sd {
+    width: 100%;
+  }
+
+  /* ===== WORK ===== */
+  .work {
+    padding: 40px 15px;
+  }
+
+  .workc2 {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .wcard1 {
+    width: 100%;
+    height: auto;
+  }
+
+  /* ===== CONTACT ===== */
+  .contact {
+    padding: 40px 15px;
+  }
+
+  .cc2 {
+    flex-direction: column;
+  }
+
+  .cbox1,
+  .cbox2 {
+    width: 100%;
+    height: auto;
+  }
+
+  .sbutton {
+    width: 100%;
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 360px) {
+
+  .iamguri,
+  .rai {
+    font-size: 34px;
+  }
+
+  .htextdiv p {
+    font-size: 18px;
+  }
+
+  .gurihc2 {
+    width: 210px;
+  }
+
+  .copyr p {
+    font-size: 14px;
+  }
+}
+
+
+body {
+  background-color: #182132;
+}
+
+html, body {
+  overflow-x: hidden;
+}
+
+
+/* ================= MOBILE MENU FEATURE ================= */
+
+.menuicon {
+  display: none;
+  color: white;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+/* Mobile dropdown panel */
+.mobilemenu {
+  display: none;
+}
+
+/* ===== Only Mobile ===== */
+@media only screen and (max-width: 600px) {
+
+  .menuicon {
+    display: block;
+    position: absolute;
+    right: 20px;
+    top: 18px;
+  }
+
+  .mobilemenu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    background-color: #1E2A3A;
+    padding: 25px 0;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    border-top: 1px solid #155DFD;
+    z-index: 999;
+    animation: slideDown 0.3s ease;
+  }
+
+  .mobilemenu a {
+    color: white;
+    font-size: 18px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    transition: 0.3s;
+  }
+
+  .mobilemenu a:hover {
+    color: #155DFD;
+    text-decoration: underline;
+  }
+
+}
+
+/* Smooth open animation */
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.cv-btn-wrapper {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.cv-btn {
+    display: inline-block;
+    padding: 14px 30px;
+    background: linear-gradient(135deg, #155DFD, #4a9bec);
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 10px;
+    transition: 0.3s ease;
+}
+
+.cv-btn:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 30px rgba(74,155,236,0.5);
+}
+
+@media (max-width: 768px) {
+    .aboutme {
+        padding: 60px 20px;
+    }
+
+    .about-content p {
+        font-size: 15px;
+    }
+}
+
+/* ================= HOME ENHANCED EFFECTS ================= */
+
+/* Navbar smooth transition */
+.navbaarp {
+  transition: all 0.4s ease;
+}
+
+/* Glass effect on scroll */
+.nav-scrolled {
+  background: rgba(30, 42, 58, 0.85);
+  backdrop-filter: blur(12px);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.4);
+}
+
+/* Navbar links hover glow */
+.navbaarc1 a {
+  position: relative;
+  transition: 0.3s ease;
+}
+
+.navbaarc1 a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 0%;
+  height: 2px;
+  background: linear-gradient(90deg, #155DFD, #4a9bec);
+  transition: 0.3s ease;
+}
+
+.navbaarc1 a:hover::after {
+  width: 100%;
+}
+
+.navbaarc1 a:hover {
+  color: #4a9bec;
+}
+
+/* HERO subtle animated background glow */
+.herosection {
+  position: relative;
+  overflow: hidden;
+}
+
+.herosection::before {
+  content: "";
+  position: absolute;
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, rgba(74,155,236,0.25), transparent 70%);
+  top: -150px;
+  right: -150px;
+  animation: heroGlow 6s ease-in-out infinite;
+}
+
+@keyframes heroGlow {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.15); }
+  100% { transform: scale(1); }
+}
+
+/* Hero text smooth fade in */
+.htextdiv {
+  animation: fadeUp 1s ease forwards;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Logo slight hover glow
+.gurilogo img:hover {
+  box-shadow: 0 0 15px #4a9bec;
+} */
+
+/* ===== HERO NAME GRADIENT EFFECT ===== */
+
+.iamguri,
+.rai {
+  font-size: 70px;
+  font-weight: 800;
+  background: linear-gradient(90deg, #ffffff, #4a9bec, #155DFD, #ffffff);
+  background-size: 300% 300%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: nameGradient 6s ease infinite;
+  transition: 0.3s ease;
+}
+
+@keyframes nameGradient {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Typing cursor */
+.sdtext::after {
+  content: "|";
+  margin-left: 6px;
+  animation: blink 1s infinite;
+  color: #4a9bec;
+}
+
+@keyframes blink {
+  0% { opacity: 1; }
+  50% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+/* ================= HERO BUTTONS PRO ================= */
+
+.hc1but {
+  width: 300px;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  margin-left: 100px;
+  margin-top: 35px;
+}
+
+/* PRIMARY BUTTON - Hire Me */
+.hc1b1 {
+  padding: 14px 26px;
+  font-size: 15px;
+  font-weight: 600;
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+  color: white;
+  background: linear-gradient(135deg, #155DFD, #4a9bec);
+  box-shadow: 0 8px 20px rgba(21,93,253,0.4);
+  transition: all 0.3s ease;
+}
+
+.hc1b1:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(21,93,253,0.6);
+}
+
+/* SECONDARY BUTTON - View Work */
+.hc1b2 {
+  padding: 14px 26px;
+  font-size: 15px;
+  font-weight: 600;
+  border-radius: 30px;
+  cursor: pointer;
+  background: transparent;
+  color: #4a9bec;
+  border: 2px solid #4a9bec;
+  transition: all 0.3s ease;
+}
+
+.hc1b2:hover {
+  background: #4a9bec;
+  color: white;
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(74,155,236,0.5);
+}
+
+/* ===== FORCE HERO BUTTON FIX ===== */
+
+.hc1b1,
+.hc1b2 {
+  width: auto !important;
+  height: auto !important;
+  white-space: nowrap;
+  min-width: 140px;
+  text-align: center;
+}
+
+/* ===== MOBILE HERO BUTTON FIX ===== */
+
+@media (max-width: 768px) {
+
+  .hc1but {
+    margin-left: 0 !important;
+    width: 100%;
+    justify-content: center;
+  }
+
+}
+
+/* ===== MOBILE HERO GAP FIX ===== */
+
+@media (max-width: 768px) {
+  .herosection {
+    margin-top: 0 !important;
+    padding-top: 80px;
+  }
+}
+
+/* ===== CLEAN LOGO VERTICAL SCROLL ===== */
+
+.logo-scroll {
+  position: relative;
+  display: inline-block;
+  height: 28px;
+  overflow: hidden;
+  line-height: 28px;
+}
+
+.logo-scroll span {
+  display: block;
+  height: 28px;
+  font-size: 22px;
+  font-weight: bold;
+  color: #4a9bec;
+  transition: transform 0.5s ease;
+}
+
+/* Second one white for effect */
+.logo-scroll span:last-child {
+  color: white;
+}
+
+/* Hover effect */
+.gurilogo:hover .logo-scroll span {
+  transform: translateY(-100%);
+}
+
+
