@@ -23,6 +23,10 @@ export const metadata: Metadata = {
 
   description:
     "Guri Rai is a passionate Frontend and Next.js Developer building modern, responsive web applications using React, Next.js, TypeScript, and modern UI technologies.",
+   
+    verification: {
+  google: "gr9opUOaVgGUFpP2xZVvF_9CwCaXXqEH7HCN-r0SrY8",
+},
 
   keywords: [
     "Guri Rai",
