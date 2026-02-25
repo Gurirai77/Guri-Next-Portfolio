@@ -59,7 +59,7 @@ useEffect(() => {
     <div className="fb">
       <div className={`navbaarp ${scrolled ? "nav-scrolled" : ""}`}>
         <div className="gurilogo">
-          <Image  src={guripic} alt="logo" width={50} height={50} />
+          <Image   src={guripic} alt="Guri Rai - Frontend and Next.js Developer" width={50} height={50} />
          <span className="logo-scroll">
           <span>The Guri Rai</span>
           <span>The Guri Rai</span>
@@ -121,7 +121,7 @@ useEffect(() => {
           <Image
             className="gurihc2"
             src={guripic}
-            alt="profile"
+            alt="Guri Rai - Image"
             // width={350}
             // height={350}
           />
