@@ -76,15 +76,15 @@ export default function Contact() {
             </a>
           </div>
           <div className="social-links">
-  <a href="https://instagram.com/YOUR_USERNAME" target="_blank">
+  <a href="https://www.instagram.com/_its_guri__13?igsh=MWpoZmt4NGt6aDhneQ==" target="_blank">
     <FaInstagram />
   </a>
 
-  <a href="https://x.com/YOUR_USERNAME" target="_blank">
+  <a href="https://x.com/mrgurirai77?t=YdzNbY6sCwVbFTgnn1esBA&s=09" target="_blank">
     <FaXTwitter />
   </a>
 
-  <a href="https://youtube.com/@YOUR_CHANNEL" target="_blank">
+  <a href="https://youtube.com/@itsgurirai13?si=RXOyyPy9TdquTIB8" target="_blank">
     <FaYoutube />
   </a>
 </div>
