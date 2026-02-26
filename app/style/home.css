@@ -252,7 +252,7 @@ a{
 .gurihc2 {
     width: 320px;
     margin-top: 130px;
-    box-shadow: 0px 0px 10px 10px #0d1b2ae7;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.3);
     border-radius: 100%;
 }
 
@@ -474,7 +474,7 @@ a{
 /* Hover Effect */
 .sd:hover {
     transform: translateX(10px);
-    box-shadow: 0 30px 60px rgba(0,0,0,0.5);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.25);
 }
 
 /* Text Styling */
@@ -1608,6 +1608,18 @@ html, body {
 /* Hover effect */
 .gurilogo:hover .logo-scroll span {
   transform: translateY(-100%);
+}
+
+/* ===== SCROLL PERFORMANCE FIX ===== */
+
+.wcard1,
+.ftl,
+.sd,
+.hc1b1,
+.hc1b2,
+.gurihc2 {
+  will-change: transform;
+  transform: translateZ(0);
 }
 
 
