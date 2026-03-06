@@ -3,9 +3,9 @@ import { MetadataRoute } from "next";
 export default function sitemap(): MetadataRoute.Sitemap {
   return [
     {
-      url: "https://gurirai.online",
+      url: "https://www.gurirai.online",
       lastModified: new Date(),
-      changeFrequency: "monthly",
+      changeFrequency: "hourly",
       priority: 1,
     },
   ];
