@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://gurirai.online"),
+  metadataBase: new URL("https://www.gurirai.online"),
 
   title: {
     default: "Guri Rai | Frontend & Next.js Developer",
@@ -30,6 +30,10 @@ export const metadata: Metadata = {
 },
 
   keywords: [
+    "sirsa website developer",
+    "guri sirsa",
+    "guri",
+    "guri rai",
     "Guri Rai",
     "Frontend Developer",
     "Next.js Developer",
@@ -40,7 +44,7 @@ export const metadata: Metadata = {
     "Modern Web Applications",
   ],
 
-  authors: [{ name: "Guri Rai", url: "https://gurirai.online" }],
+  authors: [{ name: "Guri Rai", url: "https://www.gurirai.online" }],
   creator: "Guri Rai",
   applicationName: "Guri Rai Portfolio",
 

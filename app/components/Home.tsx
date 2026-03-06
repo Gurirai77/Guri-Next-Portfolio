@@ -4,6 +4,7 @@ import { useState , useEffect } from "react";
 import Image from "next/image";
 import { IoMenu, IoClose } from "react-icons/io5";
 import guripic from "../../public/guripic.webp";
+import gurilogo from "../../public/guri_rai_logo_.png";
 
 const Home = () => {
   const [showMenu, setShowMenu] = useState(false);
@@ -59,7 +60,7 @@ useEffect(() => {
     <div className="fb">
       <div className={`navbaarp ${scrolled ? "nav-scrolled" : ""}`}>
         <div className="gurilogo">
-          <Image   src={guripic} alt="Guri Rai - Frontend and Next.js Developer" width={50} height={50} />
+          <Image   src={gurilogo} alt="Guri Rai - Frontend and Next.js Developer" width={50} height={50} />
          <span className="logo-scroll">
           <span>The Guri Rai</span>
           <span>The Guri Rai</span>
